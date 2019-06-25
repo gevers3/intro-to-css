@@ -1,12 +1,334 @@
+* {
+  box-sizing: border-box;
+  }
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1.7 sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
-
 html {
   height: 100%;
 }
-
 body {
   margin: 0;
   min-height: 100%;
+  background-color: rgb(0,174,239);
 }
+#color-bar {
+  height: 18px;
+  width: 100%;
+  background-color:#00AEEF;
+}
+a {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Styles for nav */
+
+#nav-wrapper {
+  width: 100%;
+  background-color: white;
+}
+nav {
+  width: 1140px;
+  margin: 0 auto;
+  background-color:#fff;
+}
+#nav-logo {
+  display: inline;
+}
+#nav-logo img {
+  width: 160px;
+  margin: 20px 0 0 0;
+}
+nav ul#nav-items {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-type: none;
+  margin: 56px 0 0 0;
+  float: right;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 40px 0 0;
+}
+nav a:link {
+  color:#000;
+}
+nav a:visited {
+  color:rgb(113, 114, 114);
+}
+nav a:hover {
+  color:#00AEEF;
+}
+nav a:active {
+  color:#00AEEF;
+}
+
+/* Styles for banner */
+
+#banner {
+  background-image: url(welder-114577652-crop-2.jpg);
+  height:200px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  border-top: 1px solid rgb(0,174,239);
+  border-bottom: 1px solid rgb(0,174,239);
+}
+#banner-about {
+  background-image: url(178674340-crop.jpg);
+  height:200px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  border-top: 1px solid rgb(0,174,239);
+  border-bottom: 1px solid rgb(0,174,239);
+}
+#banner p {
+  color:#000;
+  margin: 110px 0 0 890px;
+}
+
+
+/* */
+
+.section {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section p {
+  margin-top: 0;
+}
+.boxes div {
+  flex: 1 1 250px;
+  margin: 10px;
+  margin-bottom:32px;
+  border-radius: 5px;
+  padding: 25px; 
+  background-color: #efeff0;
+  display: flex;
+  flex-flow: column;
+}
+.boxes .more {
+  margin-top: 24px;
+}
+.more a {
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+.footer .copyright {
+  flex: 2 1 500px;
+  margin-right: 0px;
+  line-height:1.4;
+}
+.footer .signup {
+  flex: 1 1 250px;
+}
+.signup label {
+  width: 100%;
+}
+.signup input[type="email"] {
+  border-radius: 4px 0 0 4px;
+  font-size: 15px;
+  height: 38px;
+  padding: 6px 10px;
+  border: 0px solid #6d6e71;
+  box-shadow: none;
+  flex: 1;
+}
+.signup input[type="submit"] {
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px;
+}
+.info {
+background-color: white;
+}
+}
+.info h2 {
+  text-align: center;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 2.6em;
+  margin: 30px 0 20px 0;
+  text-align:center;
+  line-height: 1.2;
+}
+.boxes, .footer, .footer form { 
+  display: flex;
+  flex-flow: row wrap;
+  }
+.footer {
+    color:#fff;
+    padding: 30px;
+  }
+.signup label {
+    width: 100%;
+}
+.signup input[type="email"] {
+  border-radius: 4px 0 0 4px;
+  border:0px;
+  flex: 1;
+  margin-right: 0;
+}
+.signup input[type="submit"] {
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px;
+  color:#fff;
+  background-color:#000;
+  display: inline-block;
+  height: 38px;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 0px;
+}
+
+/* button styles from miss man tutorial */
+
+.info .button {
+  background-color: rgb(0,174,239);
+  border: none;
+  color: white;
+  text-decoration:none;
+  }
+.button:hover {
+    background-color:#000;
+  }
+
+#about-pic {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#horiz-line {
+  background-color:#00AEEF;
+  height: 1px;
+  width: 100%;
+}
+
+/* add table styles here */
+#price, #rating {
+  width: 15%;
+}
+.inventory {
+  max-width: 1140px;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+.inventory caption {
+  text-align: right;
+  font-size: .85em;
+  margin-bottom: 10px;
+}
+.inventory td, .inventory th {
+  font-size: 1.1em;
+  border: 1px solid #00AEEF;
+  padding: 3px 7px 2px 7px;
+}
+.inventory th {
+  text-transform:uppercase;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  background: #00AEEF;
+  color: white;
+}
+.inventory tr:nth-of-type(even){
+  background-color: #fff;
+}
+.inventory tr:nth-of-type(odd){
+  background-color: #c8eafa;
+}
+.inventory {
+  margin-bottom: 80px;
+}
+.inventory th:hover {
+  background-color: #000;
+}
+
+
+.work-content {
+  background-color: white;
+  height: 80%;
+  }
+.work-content h2 {
+    text-align: center;
+    line-height: 1.2;
+  }
+.work-content .button {
+    background-color: rgb(0,174,239);
+    border: none;
+    color: white;
+    text-decoration:none;
+    }
+  
+
+    /* animation styles:
+    https://www.mockplus.com/blog/post/css-animation-examples
+   */
+
+    body {
+      background-color: rgb(0,174,239);
+    }
+    
+    .container-3 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -64.5px;
+      margin-top: -85.5px;
+    }
+    
+    .ghost {
+      animation: float 3s ease-out infinite;
+    }
+    
+    @keyframes float {
+      50% {
+         transform: translate(0, 20px);
+      }
+    }
+    .shadowFrame {
+      width: 130px;
+      margin-top: 15px;
+    }
+    .shadow {
+      animation: shrink 3s ease-out infinite;
+      transform-origin: center center;
+      ellipse {
+        transform-origin: center center;
+      }
+    }
+    
+    @keyframes shrink {
+      0% {
+        width: 90%;
+        margin: 0 5%;
+      }
+      50% {
+        width: 60%;
+        margin: 0 18%;
+      }
+      100% {
+        width: 90%;
+        margin: 0 5%;
+      }
+    }
+
+      /* media queries */
+
+@media (max-width: 500px) {
+  .nav {
+    flex-flow: column;
+  }
+  .nav a {
+    width: 100%;
+    margin-bottom: 2px;
+}
+}
+
